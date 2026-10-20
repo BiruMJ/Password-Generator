@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="password-container">
+            <div class="title">
+                <h1>Generate a <br><span class="password-type">random password</span></h1>
+                <p>Never use an insecure password again.</p>
+            </div>
+            <hr>
+            <div class="passwordLength-group">
+                <label for="pass-length">Enter Password Length (Optional): </label>
+                <input type="number" min="1"  max="15" id="pass-length">
+            </div>
+            <span class="default-passwordLength">Default Length: 15</span>
+            <div class="input-field">
+                <input type="text" class="myInput" disabled placeholder="(Eg. *sP8X|Fe2-Y|oD7)">
+                <div class="cross-icon" onclick="deletePassword()">
+                    <div class="crossbar-1"></div>
+                    <div class="crossbar-2"></div>
+                </div>
+            </div>
+            <button type="button" class="password-btn" onclick="generatePass()">Generate password</button>
+            <p class="choose">(Choose any one)</p>
+            <div class="passwords">
+                <div class="eg-password" onclick="selectPassword1()" href="#" id="password-1"></div>
+                <div class="eg-password" href="#" onclick="selectPassword2()" id="password-2"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

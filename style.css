@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C1C1C;
+    font-family: "Karla", sans-serif;
+    padding: 0;
+    height: 100vh;
+}
+
+.password-container {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 550px;
+    padding: 4rem 3rem;
+    background-color: #1F2937;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    font-weight: 800;
+    line-height: 45px;
+    margin-bottom: .3em;
+}
+
+.password-type {
+    color: #4ADF86;
+}
+
+p {
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+hr {
+    margin: 0;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 2px solid #273549;
+}
+
+.passwordLength-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    color: white;
+    font-size: 1.3em;
+}
+
+.default-passwordLength {
+    display: block;
+    color: white;
+    font-size: 1.3em;
+}
+
+.password-btn {
+    width: 100%;
+    background-color: #059669;
+    border: none;
+    border-radius: 6px;
+    padding: 1em 0.5em;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: .5em;
+}
+
+.password-btn:hover {
+    background-color: #047857;
+}
+
+.password-btn:active {
+    background-color: #059669;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #6B7280;
+    padding: 0.4em;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 2em;
+}
+
+#pass-length {
+    width: 20%;
+    background: #273549;
+    border: 1px solid #374151;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.cross-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: -60px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.crossbar-1 {
+    content: " ";
+    border-top: 3px solid white;
+    transform: rotate(45deg);
+}
+
+.crossbar-2 {
+    content: " ";
+    border-top: 3px solid white;
+    transform: rotate(-45deg);
+    margin-top: -3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.choose {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.passwords {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    text-align: center;
+}
+
+.passwords .eg-password {
+    background-color: #273549;
+    width: 100%;
+    color: #55F991;
+    border-radius: 6px;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+.passwords .eg-password:hover {
+    background-color: #4B5563;
+}
+
+.passwords .eg-password:active {
+    background-color: #374151;
+}
+
+
+@media (max-width: 425px) {
+    .password-container {
+        padding: 3rem 2rem;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
